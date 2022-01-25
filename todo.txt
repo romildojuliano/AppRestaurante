@@ -1,0 +1,2 @@
+1 - Fazer o programa criar um servidor
+2 - Gerar QRCodes nesse servidor

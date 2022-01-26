@@ -21,6 +21,7 @@ class Table:
         
         self.tableId = ''.join(choices(ascii_letters + digits, k=8))
         os.system("mkdir tables/{}".format(self.tableId))
+        os.system("cp -R {}/* tables/{}".format(info.WEBSITEFOLDER, self.tableId))
         
         self.requests = list()
         self.URL = 'http://{}:{}/tables/{}/'.format(info.my_ip, info.PORT, self.tableId)
